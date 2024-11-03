@@ -15,13 +15,14 @@ function App() {
                     Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
                 },
             };
-            const url = "https://api.themoviedb.org/3/movie/popular?language=vi&page=1";
+            const url =
+                "https://api.themoviedb.org/3/movie/popular?language=vi&page=1";
 
             const response = await fetch(url, options);
             const data = await response.json();
 
             console.log(data);
-        }
+        };
 
         fetchMovie();
     }, []);
