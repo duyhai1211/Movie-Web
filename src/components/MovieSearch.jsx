@@ -1,8 +1,13 @@
+import PropType from 'prop-types';
+
+
 import React from 'react'
 
-const MovieSearch = () => {
+const MovieSearch = (title, data) => {
   return (
-    <div>MovieSearch</div>
+    <div>
+      <p>{title}</p>
+    </div>
   )
 }
 

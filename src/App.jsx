@@ -6,6 +6,27 @@ import MovieList from "./components/MovieList";
 function App() {
     const [movie, setMovie] = useState([]);
     const [movieRate, setMovieRate] = useState([]);
+    const [movieSearch, setMovieSearch] = useState([]);
+    
+    const handleSearch = async (searchVal) => {
+        try {
+            const url = `https://api.themoviedb.org/3/search/movie?query=${searchVal}include_adult=false&language=vi&page=1`;
+            const options = {
+                method: "GET",
+                headers: {
+                    accept: "application/json",
+                    Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
+                },
+            };
+            const searchMovie = await fetch(url, options);
+            const data = await searchMovie.json();
+            console.log(data)
+        }catch (error) {
+            console.log(error)
+        }
+        
+    }
+}
 
     useEffect(() => {
         const fetchMovie = async () => {
@@ -39,7 +60,7 @@ function App() {
     return (
         <>
             <div className="bg-black pb-10">
-                <Header />
+                <Header onsSearch={handleSearch} />
                 <Banner />
                 <MovieList title={"Phim Hot"} data={movie} />
                 <MovieList title={"Phim Đề Cử"} data={movieRate} />
