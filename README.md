@@ -5,13 +5,22 @@
 
 I use React + Vite + Tailwind
 
-API: https://www.themoviedb.org/
+
+## Dependencies
+
+This project uses the following libraries:
+
+- [The Movie Database (TMDb) API](https://developer.themoviedb.org/reference/movie-videos) - An API to retrieve data about movies.
+- [react-multi-carousel](https://www.npmjs.com/package/react-multi-carousel) - A library for creating dynamic carousels in React.
+- [react-youtube](https://www.npmjs.com/package/react-youtube) - A library to embed and control YouTube videos in a React application.
+- [react-modal](https://www.npmjs.com/package/react-modal) - A library for creating customizable modal (pop-up) windows in a React application.
+
+
 
 I’m currently practicing using React along with APIs to create a project.
 
-
-
-
+## Install
+npm install react-multi-carousel react-youtube react-modal
 
 
 
