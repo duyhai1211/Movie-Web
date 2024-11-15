@@ -62,7 +62,7 @@ function App() {
                 <Header onSearch={handleSearch} />
                 <Banner />
                 {movieSearch.length > 0 ? (
-                    <movieSearch title={"Kết quả tìm kiếm"} />
+                    <movieSearch title={"Kết quả tìm kiếm"} data={movieSearch} />
                 ) : (
                     <>
                         <MovieList title={"Phim Hot"} data={movie} />
