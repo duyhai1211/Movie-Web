@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropType from 'prop-types';
 import { useState } from 'react';
 
 function Header({ onSearch }) {
