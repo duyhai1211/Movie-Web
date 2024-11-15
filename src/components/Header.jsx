@@ -1,6 +1,6 @@
 import PropType from 'prop-types'; 
 
-function Header = ({onSearch}) => {
+function Header({ onSearch }) {
     return (
         <div className="p-4 bg-black flex items-center justify-between">
             <div className="flex items-center space-x-4">
@@ -25,15 +25,19 @@ function Header = ({onSearch}) => {
                     placeholder="Search"
                     className="p-3 text-black"
                 />
-                <button className="p-2 text-white bg-red-600"
-                onClick={{} => onSearch('hit')}>Search</button>
+                <button
+                    className="p-2 text-white bg-red-600"
+                    onClick={() => onSearch('hit')}
+                >
+                    Search
+                </button>
             </div>
         </div>
     );
-};
-
-Header.PropType = {
-    onSearch: PropType.func
 }
+
+Header.propTypes = {
+    onSearch: PropType.func,
+};
 
 export default Header;
