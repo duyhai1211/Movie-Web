@@ -1,14 +1,12 @@
 import { Children, createContext } from "react";
-import PropType from "prop-types"
-import Modal from "react-modal";
-import YouTube from "react-youtube";
 
 const MovieContext = createContext();
 
-const MovieProvider = ({ children }) => {
+const MovieProvider = ({children}) =>{
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [trailerKey, setTrailerKey] = useState("");
 
+    
     const handleTrailer = async (id) => {
         setTrailerKey("");
         try {
@@ -20,7 +18,7 @@ const MovieProvider = ({ children }) => {
                     Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
                 },
             };
-
+  
             const response = await fetch(url, options);
             const data = await response.json();
             if (data.results && data.results.length > 0) {
@@ -33,35 +31,8 @@ const MovieProvider = ({ children }) => {
         }
     };
     return (
-        <MovieContext.Provider value={{ handleTrailer }}>
-            {children}
-            <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={() => setModalIsOpen(false)}
-                style={{
-                    overlay: {
-                        position: "fixed",
-                        zIndex: 9999,
-                    },
-                    content: {
-                        top: "50%",
-                        left: "50%",
-                        right: "auto",
-                        bottom: "auto",
-                        marginRight: "-50%",
-                        transform: "translate(-50%, -50%)",
-                    },
-                }}
-                contentLabel="Trailer Modal"
-            >
-                <YouTube videoId={trailerKey} opts={opts} />
-            </Modal>
+        <MovieContext.Provider>
+            
         </MovieContext.Provider>
-    );
-};
-
-MovieProvider.PropTypes = {
-    childen: PropType.node,
+    )
 }
-
-export {MovieProvider, MovieContext}
