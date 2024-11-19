@@ -10,7 +10,7 @@ const Banner = () => {
                 <div className="flex flex-col space-y-5 items-baseline w-[50%]">
                     <p className="text-white bg-gradient-to-r from-red-600 to-white text-md py-2 px-3">TV Show</p>
                     <div className="flex flex-col space-y-4">
-                        <h2 className="text-white text-[40px] font-bold">Tôi yêu em Tr</h2>
+                        <h2 className="text-white text-[40px] font-bold">Hãy Yêu Khi Có Thể</h2>
                         <div className="flex items-center space-x-3">
                             <img src={IconRating} alt="rating" className="w-8 h-8" />
                             <img src={IconRating} alt="rating" className="w-8 h-8" />
