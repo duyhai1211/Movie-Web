@@ -42,7 +42,7 @@ function Header({ onSearch }) {
 }
 
 Header.propTypes = {
-    onSearch: PropTypes.func, // Sửa lỗi PropType
+    onSearch: PropType.func, // Sửa lỗi PropType
 };
 
 export default Header;

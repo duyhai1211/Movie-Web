@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import MovieList from "./components/MovieList";
+import MovieSearch from "./components/MovieSearch"; // Nhập component MovieSearch
+import { MovieProvider } from "./context/MovieProvider";
 
 function App() {
     const [movie, setMovie] = useState([]);
@@ -58,18 +60,24 @@ function App() {
 
     return (
         <>
-            <div className="bg-black pb-10">
-                <Header onSearch={handleSearch} />
-                <Banner />
-                {movieSearch.length > 0 ? (
-                    <movieSearch title={"Kết quả tìm kiếm"} data={movieSearch} />
-                ) : (
-                    <>
-                        <MovieList title={"Phim Hot"} data={movie} />
-                        <MovieList title={"Phim Đề Cử"} data={movieRate} />
-                    </>
-                )}
-            </div>
+            <MovieProvider>
+                <div className="bg-black pb-10">
+                    <Header onSearch={handleSearch} />
+                    <Banner />
+                    {movieSearch.length > 0 ? (
+                        // Sử dụng component MovieSearch để hiển thị kết quả tìm kiếm
+                        <MovieSearch
+                            title={"Kết quả tìm kiếm"}
+                            data={movieSearch}
+                        />
+                    ) : (
+                        <>
+                            <MovieList title={"Phim Hot"} data={movie} />
+                            <MovieList title={"Phim Đề Cử"} data={movieRate} />
+                        </>
+                    )}
+                </div>
+            </MovieProvider>
         </>
     );
 }
