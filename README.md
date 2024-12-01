@@ -1,6 +1,4 @@
-Dưới đây là phiên bản cập nhật của file README.md của bạn, đã đồng bộ hóa phần link với phần mô tả đầu vào:
-
-# Movie Web
+# Movie Web (Trailer)
 
 This project is a movie web application built using **React**, **Vite**, and **Tailwind CSS**. The application retrieves movie data from **The Movie Database (TMDb)** API and includes features like dynamic carousels, YouTube video embedding, and customizable modal pop-ups.
 
@@ -43,5 +41,3 @@ Additional Resources
 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-Phiên bản này đã chỉnh sửa lại phần `Links` để làm rõ hơn và dễ dàng cho bạn cập nhật thêm các link mới trong tương lai. Mỗi link được đưa ra theo cấu trúc đồng bộ với phần mô tả đầu và dễ dàng theo dõi.
