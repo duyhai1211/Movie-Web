@@ -4,7 +4,7 @@ This project is a movie web application built using **React**, **Vite**, and **T
 
 ## Features
 
-- **TMDb API**: Fetch movie data like movie details, trailers, and images.
+- **TMDB API**: Fetch movie data like movie details, trailers, and images.
 - **Dynamic Carousels**: Use `react-multi-carousel` for creating interactive carousels to display movie data.
 - **YouTube Integration**: Embed and control YouTube trailers with `react-youtube`.
 - **Modals**: Display detailed movie information in a modal using `react-modal`.
