@@ -1,32 +1,47 @@
-
+Dưới đây là phiên bản cập nhật của file README.md của bạn, đã đồng bộ hóa phần link với phần mô tả đầu vào:
 
 # Movie Web
 
+This project is a movie web application built using **React**, **Vite**, and **Tailwind CSS**. The application retrieves movie data from **The Movie Database (TMDb)** API and includes features like dynamic carousels, YouTube video embedding, and customizable modal pop-ups.
 
-I use React + Vite + Tailwind
+## Features
 
+- **TMDb API**: Fetch movie data like movie details, trailers, and images.
+- **Dynamic Carousels**: Use `react-multi-carousel` for creating interactive carousels to display movie data.
+- **YouTube Integration**: Embed and control YouTube trailers with `react-youtube`.
+- **Modals**: Display detailed movie information in a modal using `react-modal`.
 
-## Dependencies
+## Installation
 
-This project uses the following libraries:
+To get started with the project, clone the repository and install the dependencies using npm:
 
-- [The Movie Database (TMDb) API](https://developer.themoviedb.org/reference/movie-videos) - An API to retrieve data about movies.
-- [react-multi-carousel](https://www.npmjs.com/package/react-multi-carousel) - A library for creating dynamic carousels in React.
-- [react-youtube](https://www.npmjs.com/package/react-youtube) - A library to embed and control YouTube videos in a React application.
-- [react-modal](https://www.npmjs.com/package/react-modal) - A library for creating customizable modal (pop-up) windows in a React application.
-
-
-
-I’m currently practicing using React along with APIs to create a project.
-
-## Install
+```bash
 npm install react-multi-carousel react-youtube react-modal
 
+Setup
 
+This template provides a minimal setup to get React working with Vite and includes HMR (Hot Module Replacement) for a fast development experience. The project uses Tailwind CSS for styling and includes ESLint rules for code quality.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To use React with Vite, two official plugins are available:
+	•	@vitejs/plugin-react: Uses Babel for Fast Refresh.
+	•	@vitejs/plugin-react-swc: Uses SWC for Fast Refresh.
 
-Currently, two official plugins are available:
+Links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+	•	Vercel Deployment: Movie Web Live Demo
+	•	TMDb API: Movie Videos API Documentation
+	•	react-multi-carousel: npm Package
+	•	react-youtube: npm Package
+	•	react-modal: npm Package
+
+Additional Resources
+
+	•	Vite Documentation: Vite Docs
+	•	Tailwind CSS Documentation: Tailwind Docs
+	•	React Documentation: React Docs
+
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Phiên bản này đã chỉnh sửa lại phần `Links` để làm rõ hơn và dễ dàng cho bạn cập nhật thêm các link mới trong tương lai. Mỗi link được đưa ra theo cấu trúc đồng bộ với phần mô tả đầu và dễ dàng theo dõi.
