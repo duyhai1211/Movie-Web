@@ -9,12 +9,15 @@ This project is a movie web application built using **React**, **Vite**, and **T
 - **YouTube Integration**: Embed and control YouTube trailers with `react-youtube`.
 - **Modals**: Display detailed movie information in a modal using `react-modal`.
 
+ After deployment using Vercel, the project is accessible at: [Movie Web Live Demo](https://movie-web-trailer.vercel.app/)
+
 ## Installation
 
 To get started with the project, clone the repository and install the dependencies using npm:
 
 ```bash
 npm install react-multi-carousel react-youtube react-modal
+
 
 Setup
 
@@ -24,20 +27,27 @@ To use React with Vite, two official plugins are available:
 	•	@vitejs/plugin-react: Uses Babel for Fast Refresh.
 	•	@vitejs/plugin-react-swc: Uses SWC for Fast Refresh.
 
-Links
 
-	•	Vercel Deployment: Movie Web Live Demo
-	•	TMDb API: Movie Videos API Documentation
-	•	react-multi-carousel: npm Package
-	•	react-youtube: npm Package
-	•	react-modal: npm Package
+```
 
-Additional Resources
+## Links
 
-	•	Vite Documentation: Vite Docs
-	•	Tailwind CSS Documentation: Tailwind Docs
-	•	React Documentation: React Docs
+- [Vercel 배포: 영화 웹 라이브 데모](https://vercel.com/)
 
-License
+- [TMDb API: 영화 비디오 API 문서](https://developer.themoviedb.org/reference/movie-videos) 
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- [react-multi-carousel: npm 패키지](https://www.npmjs.com/package/react-multi-carousel) 
+
+- [react-youtube: npm 패키지](https://www.npmjs.com/package/react-youtube) 
+
+- [react-modal: npm 패키지](https://www.npmjs.com/package/react-modal)
+
+
+## Additional Resources
+
+- [Vite Documentation: Vite Docs](https://vitejs.dev/)
+
+- [Tailwind CSS Documentation: Tailwind Docs](https://tailwindcss.com/docs) 
+
+- [React Documentation: React Docs](https://react.dev/)
+
