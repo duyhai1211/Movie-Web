@@ -18,16 +18,6 @@ To get started with the project, clone the repository and install the dependenci
 ```bash
 npm install react-multi-carousel react-youtube react-modal
 
-
-Setup
-
-This template provides a minimal setup to get React working with Vite and includes HMR (Hot Module Replacement) for a fast development experience. The project uses Tailwind CSS for styling and includes ESLint rules for code quality.
-
-To use React with Vite, two official plugins are available:
-	•	@vitejs/plugin-react: Uses Babel for Fast Refresh.
-	•	@vitejs/plugin-react-swc: Uses SWC for Fast Refresh.
-
-
 ```
 
 ## Links
